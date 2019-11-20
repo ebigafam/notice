@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>이비가짬뽕 배달의민족 안내문</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style>
+        @media screen and (min-width: 769px) {
+            .wrap{width:450px; margin: 0 auto;}
+            .img{width:100%;}
+        }
+        @media screen and (max-width: 768px) {
+            .wrap{width:90%; height:100%; margin: 0 auto;}
+            .img{width:100%;}
+        }
+
+        html{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+        .body{margin: 0; padding: 0; width:100%; height:100%;}
+        
+        
+        .img{display: none;}
+        #img1:checked ~ .wrap .imglist .img1{display: block;} 
+        #img2:checked ~ .wrap .imglist .img2{display: block;}      
+        #img3:checked ~ .wrap .imglist .img3{display: block;}
+        #img4:checked ~ .wrap .imglist .img4{display: block;}
+        
+        .imglist{list-style: none; position: relative;}
+        .imglist li{position: absolute;
+        top:0; left:0;}
+     
+        .btns{display: none;}
+        
+        .num{ width:90%;padding: 0; position: absolute; bottom:3%;left:5%;}
+        
+        #img1:checked ~ .wrap .num #btn1{background:#75c0bb; color:#fff; }
+        #img2:checked ~ .wrap .num #btn2{background:#75c0bb; color:#fff;}
+        #img3:checked ~ .wrap .num #btn3{background:#75c0bb; color:#fff;}
+        #img4:checked ~ .wrap .num #btn4{background:#75c0bb; color:#fff;}
+        
+        .num li{display: block; width:21.25%; height: 50px; float:left; margin-right:5%;
+        border: 1px solid #eee; box-sizing: border-box; border-radius: 20px; font-size:16px;
+        font-weight:600;}
+        .num li:last-child{margin-right:0%;}
+        .num li label{width:100%; height:100%;
+        display: block; text-align: center;
+        line-height: 48px;}
+        
+    </style>
+    
+</head>
+<body>
+   
+   
+   <input type="radio" name="btn" class="btns" id="img1" checked>
+   <input type="radio" name="btn" class="btns" id="img2">
+   <input type="radio" name="btn" class="btns" id="img3">
+   <input type="radio" name="btn" class="btns" id="img4">
+   
+   <div class="wrap">
+      <ul class="imglist">
+          <li>
+              <img class="img img1" src="img/1.jpg" alt="">
+          </li>
+          <li>
+              <img class="img img2" src="img/2.jpg" alt="">
+          </li>
+          <li>
+              <img class="img img3" src="img/3.jpg" alt="">
+          </li>
+          <li>
+              <img class="img img4" src="img/4.jpg" alt="">
+          </li>
+      </ul>
+       
+   
+   
+   <ul class="num">
+      <li id="btn1">
+         <label for="img1">
+         1
+         </label> 
+      </li>
+      <li id="btn2">
+         <label for="img2">
+         2
+         </label>  
+      </li>
+      <li id="btn3">
+         <label for="img3">
+         3
+         </label>  
+      </li>
+      <li id="btn4">
+          <label for="img4">
+         4
+         </label> 
+      </li>
+       
+   </ul>
+  
+   
+    </div>  
+   
+    
+</body>
+</html>
