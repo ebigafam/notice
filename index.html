@@ -14,12 +14,11 @@
         }
         @media screen and (max-width: 768px) {
             .wrap{width:90%; height:90%; margin: 0 auto; display: block;}
-            .img{width:100%;}
         }
 
         html{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; width:100%; height:100%;}
         .body{margin: 0; padding: 0; width:100%; height:100%;}
-        .wrap{position: absolute; height:87%;}
+        .wrap{position: absolute; height:87%; left:5%;}
         
         .img{display: none;}
         #img1:checked ~ .wrap .imglist .img1{display: block;} 
@@ -27,14 +26,15 @@
         #img3:checked ~ .wrap .imglist .img3{display: block;}
         #img4:checked ~ .wrap .imglist .img4{display: block;}
         
-        .imglist{height:100%; list-style: none; position: relative; display: block; padding:0;}
-        .imglist li{position: absolute;
+        .imglist{width:auto; height:100%; list-style: none; position: relative; display: block; padding:0; margin: 0 auto;}
+        .imglist li{position: absolute; height:100%; width:auto;
         top:0; left:0;}
      
         .btns{display: none;}
         
-        .num{ width:90%;padding: 0; position: relative; bottom:3%;left:5%;}
+        .num{ width:90%; height:50px;padding: 0; position: relative; bottom:3%;left:5%;}
         
+        .img{height:100%;}
         #img1:checked ~ .wrap .num #btn1{background:#75c0bb; color:#fff; }
         #img2:checked ~ .wrap .num #btn2{background:#75c0bb; color:#fff;}
         #img3:checked ~ .wrap .num #btn3{background:#75c0bb; color:#fff;}
